@@ -210,7 +210,7 @@ const Submit = () => {
  
   answer.innerHTML =  `<h3>${trueAnswer[idAnswer].true}</h3>`
 
-  setTimeout(Next, 5000);
+
 };
 
 const Next = () => {
