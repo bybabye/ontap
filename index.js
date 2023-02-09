@@ -195,7 +195,7 @@ const htmlAnswers = answers.map((answer) => {
 const btn = document.querySelector(".question");
 const answer = document.querySelector(".answer");
 const submit = document.querySelector(".submit");
-btn.innerHTML = newQ;
+btn.innerHTML = `${newQ}`;
 
 const Submit = () => {
   const radioButtons = document.querySelectorAll('input[name="size"]');
@@ -209,7 +209,6 @@ const Submit = () => {
   console.log(myAnswer);
  
   answer.innerHTML =  `<h3>${trueAnswer[idAnswer].true}</h3>`
-
 
 };
 
@@ -230,9 +229,9 @@ const Next = () => {
   });
   
   
-  newQ = `<div>${question[idAnswer].q}</div>  
-      ${htmlAnswers}
-  `;
+  newQ = `<h3>${question[idAnswer].q}</h3>  
+  ${htmlAnswers}
+`;
   btn.innerHTML = newQ
 };
 
@@ -252,9 +251,9 @@ const Back = () => {
     });
     
     
-    newQ = `<div>${question[idAnswer].q}</div>  
-        ${htmlAnswers}
-    `;
+    newQ = `<h3>${question[idAnswer].q}</h3>  
+    ${htmlAnswers}
+`;
     btn.innerHTML = newQ
   };
   
